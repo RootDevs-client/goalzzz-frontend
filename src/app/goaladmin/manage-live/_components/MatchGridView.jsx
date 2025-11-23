@@ -83,7 +83,7 @@ export default function MatchGridView({
           </div>
           <div className="tooltip tooltip-info" data-tip="Clone">
             <Link
-              href={`/xoomadmin/manage-live/clone/${match.id}`}
+              href={`/goaladmin/manage-live/clone/${match.id}`}
               className="pt-[6px]"
             >
               <FaRegClone className="text-lg text-blue-400 hover:text-blue-500" />
@@ -91,7 +91,7 @@ export default function MatchGridView({
           </div>
           <div className="tooltip tooltip-info" data-tip="Edit">
             <Link
-              href={`/xoomadmin/manage-live/update/${match.id}`}
+              href={`/goaladmin/manage-live/update/${match.id}`}
               className=""
             >
               <FaEdit className="text-xl text-blue-400 hover:text-blue-500" />

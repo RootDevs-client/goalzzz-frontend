@@ -12,7 +12,7 @@ export default function HighlightsHome() {
     <div>
       <div className="flex gap-x-2 items-center justify-end">
         <Link
-          href="/xoomadmin/highlights/create"
+          href="/goaladmin/highlights/create"
           className="btn btn-accent btn-sm btn-outline rounded-md"
         >
           Create Highlight

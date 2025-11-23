@@ -101,7 +101,7 @@ export default function CreateMatchForm({ queryString }) {
       if (data.status) {
         toast.success('Live Matches Created Successfully!');
         setIsSubmitting(false);
-        router.push('/xoomadmin/manage-live');
+        router.push('/goaladmin/manage-live');
       }
     } catch (error) {
       console.error('Error creating Live Matches:', error);

@@ -40,7 +40,7 @@ export default function SignInForm() {
 
       if (data.status) {
         setAuth(data?.data?.accessToken, data?.data, true);
-        replace('/xoomadmin/dashboard');
+        replace('/goaladmin/dashboard');
       } else {
         toast.error('Invalid Credentials');
       }

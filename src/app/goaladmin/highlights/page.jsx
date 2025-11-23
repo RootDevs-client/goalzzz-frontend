@@ -8,7 +8,7 @@ export const metadata = {
 export default async function page() {
   const breadMenu = {
     path1: 'Highlights',
-    link1: '/xoomadmin/highlights',
+    link1: '/goaladmin/highlights',
   };
 
   return (

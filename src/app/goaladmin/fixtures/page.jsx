@@ -12,7 +12,7 @@ export default function Page() {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>

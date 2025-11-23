@@ -111,7 +111,7 @@ export default function CreateHighlight({ query }) {
         }
       );
       if (data.status) {
-        push('/xoomadmin/highlights');
+        push('/goaladmin/highlights');
         toast.success('Highlight created successfully');
         setIsSubmitting(false);
       }

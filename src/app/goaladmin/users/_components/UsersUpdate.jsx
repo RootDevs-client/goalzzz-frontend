@@ -77,7 +77,7 @@ export default function UsersUpdate({ id }) {
 
       if (userUpdateRes.status) {
         toast.success('User Updated Successfully!');
-        router.push('/xoomadmin/users');
+        router.push('/goaladmin/users');
       } else {
         toast.error('This email already exist!');
         setFormSubmitting(false);
@@ -93,12 +93,12 @@ export default function UsersUpdate({ id }) {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>
           <li className="font-medium">
-            <Link href="/xoomadmin/users" className="no-underline">
+            <Link href="/goaladmin/users" className="no-underline">
               Users
             </Link>
           </li>

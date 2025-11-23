@@ -6,7 +6,7 @@ import AllMatches from './AllMatches';
 export default function LiveMatchesHome() {
   const breadMenu = {
     path1: 'live matches',
-    link1: '/xoomadmin/manage-live',
+    link1: '/goaladmin/manage-live',
   };
 
   return (
@@ -15,7 +15,7 @@ export default function LiveMatchesHome() {
         <BreadCrumb breadMenu={breadMenu} />
 
         <Link
-          href="/xoomadmin/manage-live/create"
+          href="/goaladmin/manage-live/create"
           className="btn btn-primary btn-outline btn-sm rounded"
         >
           <FaPlus />

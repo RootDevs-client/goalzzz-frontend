@@ -29,7 +29,7 @@ export default function NewsGridView({ news, deleteNewsModalHandler }) {
         {' '}
         <Link
           className="btn btn-sm btn-warning"
-          href={`/xoomadmin/news/update/${news._id}`}
+          href={`/goaladmin/news/update/${news._id}`}
         >
           Edit <MdEditNote className="text-xl" />
         </Link>{' '}

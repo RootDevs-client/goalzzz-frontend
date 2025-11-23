@@ -6,9 +6,9 @@ import useGetAllUsers from '@/lib/hooks/admin/useGetAllUsers';
 import Link from 'next/link';
 import { useState } from 'react';
 import {
-  BsFillArrowLeftSquareFill,
-  BsFillArrowRightSquareFill,
-  BsGridFill,
+    BsFillArrowLeftSquareFill,
+    BsFillArrowRightSquareFill,
+    BsGridFill,
 } from 'react-icons/bs';
 import { FaHome, FaList } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa6';
@@ -91,7 +91,7 @@ export default function UsersHome() {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>
@@ -101,7 +101,7 @@ export default function UsersHome() {
 
       <div className="flex items-center justify-end">
         <Link
-          href="/xoomadmin/users/create"
+          href="/goaladmin/users/create"
           className="btn btn-accent btn-sm btn-outline rounded-md"
         >
           <FaPlus /> Add New User

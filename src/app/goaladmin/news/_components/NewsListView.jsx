@@ -28,7 +28,7 @@ export default function NewsListView({ news, deleteNewsModalHandler }) {
       <div className="col-span-2 justify-self-center">
         <Link
           className="btn btn-sm btn-warning rounded-md mb-2 xl:w-[120px]"
-          href={`/xoomadmin/news/update/${news?._id}`}
+          href={`/goaladmin/news/update/${news?._id}`}
         >
           <span className="hidden xl:block">Edit</span>{' '}
           <MdEditNote className="text-xl" />

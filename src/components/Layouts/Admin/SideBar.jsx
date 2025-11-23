@@ -31,10 +31,10 @@ export default function SideBar() {
     <div className="h-full text-center">
       <div className="px-2 py-5">
         <ul>
-          <Link href="/xoomadmin/dashboard">
+          <Link href="/goaladmin/dashboard">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/dashboard')
+                pathname.includes('goaladmin/dashboard')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -43,10 +43,10 @@ export default function SideBar() {
               <span>Dashboard</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/manage-live">
+          <Link href="/goaladmin/manage-live">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/manage-live')
+                pathname.includes('goaladmin/manage-live')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -55,10 +55,10 @@ export default function SideBar() {
               <span>Manage Live</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/fixtures">
+          <Link href="/goaladmin/fixtures">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/fixtures')
+                pathname.includes('goaladmin/fixtures')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -67,10 +67,10 @@ export default function SideBar() {
               <span>Fixtures</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/app-settings">
+          <Link href="/goaladmin/app-settings">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/app-settings')
+                pathname.includes('goaladmin/app-settings')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -79,10 +79,10 @@ export default function SideBar() {
               <span>App Settings</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/popular/leagues">
+          <Link href="/goaladmin/popular/leagues">
             <li
               className={`${
-                pathname.includes('xoomadmin/popular/leagues')
+                pathname.includes('goaladmin/popular/leagues')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } rounded px-5 py-2 font-medium hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -91,10 +91,10 @@ export default function SideBar() {
               <span>Popular Leagues</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/highlights">
+          <Link href="/goaladmin/highlights">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/highlights')
+                pathname.includes('goaladmin/highlights')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -103,10 +103,10 @@ export default function SideBar() {
               <span>Highlights</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/news">
+          <Link href="/goaladmin/news">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/news')
+                pathname.includes('goaladmin/news')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -115,10 +115,10 @@ export default function SideBar() {
               <span>News</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/users">
+          <Link href="/goaladmin/users">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/users')
+                pathname.includes('goaladmin/users')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -127,10 +127,10 @@ export default function SideBar() {
               <span>Users</span>
             </li>
           </Link>
-          <Link href="/xoomadmin/subscriptions">
+          <Link href="/goaladmin/subscriptions">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/subscriptions')
+                pathname.includes('goaladmin/subscriptions')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -139,10 +139,10 @@ export default function SideBar() {
               <span>Subscriptions</span>
             </li>
           </Link>
-          {/* <Link href="/xoomadmin/payments">
+          {/* <Link href="/goaladmin/payments">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/payments')
+                pathname.includes('goaladmin/payments')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -151,10 +151,10 @@ export default function SideBar() {
               <span>Payment</span>
             </li>
           </Link> */}
-          <Link href="/xoomadmin/general-settings">
+          <Link href="/goaladmin/general-settings">
             <li
               className={`rounded px-5 py-2 font-medium ${
-                pathname.includes('xoomadmin/general-settings')
+                pathname.includes('goaladmin/general-settings')
                   ? 'text-secondary'
                   : 'text-[#7987a1]'
               } hover:text-secondary transition-all ease-linear duration-300 text-start mb-1 flex items-center`}
@@ -190,7 +190,7 @@ export default function SideBar() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
               >
-                <Link href="/xoomadmin/popular/leagues">
+                <Link href="/goaladmin/popular/leagues">
                   <motion.li
                     className={`rounded p-2 font-medium flex items-center hover:text-secondary ${
                       pathname.includes('popular/leagues') && 'text-secondary'
@@ -201,7 +201,7 @@ export default function SideBar() {
                     Leagues
                   </motion.li>
                 </Link>
-                <Link href="/xoomadmin/popular/teams">
+                <Link href="/goaladmin/popular/teams">
                   <motion.li
                     className={`rounded p-2 font-medium flex items-center hover:text-secondary ${
                       pathname.includes('popular/teams') && 'text-secondary'

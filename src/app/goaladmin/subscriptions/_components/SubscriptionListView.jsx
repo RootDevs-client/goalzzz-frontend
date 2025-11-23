@@ -30,7 +30,7 @@ export default function SubscriptionListView({
       <div className="col-span-3 justify-self-end">
         <Link
           className="btn btn-sm btn-info"
-          href={`/xoomadmin/subscriptions/update/${subscription._id}`}
+          href={`/goaladmin/subscriptions/update/${subscription._id}`}
         >
           <MdEditNote className="text-xl" />
         </Link>{' '}

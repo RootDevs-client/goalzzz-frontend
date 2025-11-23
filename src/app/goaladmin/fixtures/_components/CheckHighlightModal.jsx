@@ -49,7 +49,7 @@ export default function CheckHighlightModal({ highlightInfo }) {
             </button>
           </form>
           <Link
-            href={`/xoomadmin/highlights/create?title=${
+            href={`/goaladmin/highlights/create?title=${
               participants[0]?.name
             } vs ${participants[1]?.name}&league=${
               league?.name || ''

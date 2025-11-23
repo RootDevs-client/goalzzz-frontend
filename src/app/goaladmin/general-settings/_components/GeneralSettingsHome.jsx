@@ -4,7 +4,7 @@ import SettingsMainForm from './SettingsMainForm';
 export default function GeneralSettingsHome() {
   const breadMenu = {
     path1: 'administration',
-    link1: '/xoomadmin/general-settings',
+    link1: '/goaladmin/general-settings',
   };
 
   return (

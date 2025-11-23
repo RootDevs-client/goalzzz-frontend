@@ -6,9 +6,9 @@ export default async function Page({ params }) {
 
   const breadMenu = {
     path1: 'live matches',
-    link1: '/xoomadmin/manage-live',
+    link1: '/goaladmin/manage-live',
     path2: 'update',
-    link2: `/xoomadmin/manage-live/update/${match_id}`,
+    link2: `/goaladmin/manage-live/update/${match_id}`,
   };
 
   return (

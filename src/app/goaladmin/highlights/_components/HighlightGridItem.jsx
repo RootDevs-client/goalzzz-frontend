@@ -45,7 +45,7 @@ export default function HighlightGridItem({
             <Link
               className="tooltip tooltip-warning"
               data-tip="Edit"
-              href={`/xoomadmin/highlights/update/${highlight?._id}`}
+              href={`/goaladmin/highlights/update/${highlight?._id}`}
             >
               <MdEditNote className="text-2xl text-warning" />
             </Link>

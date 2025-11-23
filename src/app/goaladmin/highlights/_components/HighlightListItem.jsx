@@ -37,7 +37,7 @@ export default function HighlightListItem({
       <div className="col-span-4 flex items-center justify-end gap-2 pr-5">
         <Link
           className="btn btn-sm btn-warning"
-          href={`/xoomadmin/highlights/update/${highlight?._id}`}
+          href={`/goaladmin/highlights/update/${highlight?._id}`}
         >
           <span className="hidden xl:block">Edit</span>
           <MdEditNote className="text-xl" />

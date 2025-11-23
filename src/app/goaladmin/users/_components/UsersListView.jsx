@@ -28,7 +28,7 @@ export default function UsersListView({ user, deleteUsersModalHandler }) {
       <div className="col-span-2 justify-self-center">
         <Link
           className="btn btn-sm btn-warning rounded-md mb-2 xl:w-[120px]"
-          href={`/xoomadmin/users/update/${user._id}`}
+          href={`/goaladmin/users/update/${user._id}`}
         >
           <span className="hidden xl:block">Edit</span>{' '}
           <MdEditNote className="text-xl" />

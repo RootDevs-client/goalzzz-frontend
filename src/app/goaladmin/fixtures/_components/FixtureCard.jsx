@@ -60,7 +60,7 @@ export default function FixtureCard({
                 </button>
               ) : (
                 <Link
-                  href={`/xoomadmin/manage-live/create?fixture_id=${match?.id}&title=${match?.league?.name}&t1_name=${match?.participants[0]?.name}&t1_img=${match?.participants[0]?.image_path}&t2_name=${match?.participants[1]?.name}&t2_img=${match?.participants[1]?.image_path}&time=${formattedDate}`}
+                  href={`/goaladmin/manage-live/create?fixture_id=${match?.id}&title=${match?.league?.name}&t1_name=${match?.participants[0]?.name}&t1_img=${match?.participants[0]?.image_path}&t2_name=${match?.participants[1]?.name}&t2_img=${match?.participants[1]?.image_path}&time=${formattedDate}`}
                   type="button"
                   className="btn btn-sm rounded"
                 >

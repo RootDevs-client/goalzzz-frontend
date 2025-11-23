@@ -98,7 +98,7 @@ export default function CloneMatchForm({ match_id }) {
       if (data.status) {
         toast.success('Live Matches Cloned Successfully!');
         setIsSubmitting(false);
-        router.push('/xoomadmin/manage-live');
+        router.push('/goaladmin/manage-live');
       }
     } catch (error) {
       console.error('Error creating Live Matches:', error);

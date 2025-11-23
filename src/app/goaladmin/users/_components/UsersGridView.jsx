@@ -29,7 +29,7 @@ export default function UsersGridView({ user, deleteUsersModalHandler }) {
         {' '}
         <Link
           className="btn btn-sm btn-warning"
-          href={`/xoomadmin/users/update/${user._id}`}
+          href={`/goaladmin/users/update/${user._id}`}
         >
           Edit <MdEditNote className="text-xl" />
         </Link>{' '}

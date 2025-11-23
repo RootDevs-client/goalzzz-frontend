@@ -83,12 +83,12 @@ export default function MatchListView({
             />
           </div>
           <div className="tooltip tooltip-info" data-tip="Clone">
-            <Link href={`/xoomadmin/manage-live/clone/${match.id}`}>
+            <Link href={`/goaladmin/manage-live/clone/${match.id}`}>
               <FaRegClone className="text-lg text-blue-400 hover:text-blue-500" />
             </Link>
           </div>
           <div className="tooltip tooltip-info" data-tip="Edit">
-            <Link href={`/xoomadmin/manage-live/update/${match.id}`}>
+            <Link href={`/goaladmin/manage-live/update/${match.id}`}>
               <BiEdit className="text-xl text-blue-400 hover:text-blue-500" />
             </Link>
           </div>

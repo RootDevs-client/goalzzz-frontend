@@ -6,8 +6,8 @@ import useGetAllSubscriptions from '@/lib/hooks/admin/useGetAllSubscriptions';
 import Link from 'next/link';
 import { useState } from 'react';
 import {
-  BsFillArrowLeftSquareFill,
-  BsFillArrowRightSquareFill,
+    BsFillArrowLeftSquareFill,
+    BsFillArrowRightSquareFill,
 } from 'react-icons/bs';
 import { FaHome } from 'react-icons/fa';
 import { FaPlus } from 'react-icons/fa6';
@@ -93,7 +93,7 @@ export default function SubscriptionHome() {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>
@@ -103,7 +103,7 @@ export default function SubscriptionHome() {
 
       <div className="flex items-center justify-end">
         <Link
-          href="/xoomadmin/subscriptions/create"
+          href="/goaladmin/subscriptions/create"
           className="btn btn-accent btn-sm btn-outline rounded-md"
         >
           <FaPlus /> Add New Subscription

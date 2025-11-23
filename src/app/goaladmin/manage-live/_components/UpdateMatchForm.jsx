@@ -84,7 +84,7 @@ export default function EditMatchForm({ match_id }) {
       if (data.status) {
         toast.success('Live Matches Updated Successfully!');
         setIsSubmitting(false);
-        router.push('/xoomadmin/manage-live');
+        router.push('/goaladmin/manage-live');
       } else {
         setIsSubmitting(false);
         toast.error(data?.message);

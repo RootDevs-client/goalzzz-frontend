@@ -4,9 +4,9 @@ import CreateHighlight from '../_components/CreateHighlight';
 export default async function page({ searchParams }) {
   const breadMenu = {
     path1: 'Highlights',
-    link1: '/xoomadmin/highlights',
+    link1: '/goaladmin/highlights',
     path2: 'Create',
-    link2: '/xoomadmin/highlights/create',
+    link2: '/goaladmin/highlights/create',
   };
 
   return (

@@ -89,7 +89,7 @@ export default function NewsUpdate({ id }) {
 
         if (newsUpdateRes.status) {
           toast.success('News Updated Successfully!');
-          router.push('/xoomadmin/news');
+          router.push('/goaladmin/news');
         }
       } catch (error) {
         setNewsFormSubmitting(false);
@@ -103,12 +103,12 @@ export default function NewsUpdate({ id }) {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>
           <li className="font-medium">
-            <Link href="/xoomadmin/news" className="no-underline">
+            <Link href="/goaladmin/news" className="no-underline">
               News
             </Link>
           </li>

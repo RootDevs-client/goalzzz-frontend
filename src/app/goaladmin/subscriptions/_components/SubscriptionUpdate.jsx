@@ -61,7 +61,7 @@ export default function SubscriptionUpdate({ id }) {
 
       if (subscriptionsUpdateRes.status) {
         toast.success('Subscription Updated Successfully!');
-        router.push('/xoomadmin/subscriptions');
+        router.push('/goaladmin/subscriptions');
       }
     } catch (error) {
       setFormSubmitting(false);
@@ -74,12 +74,12 @@ export default function SubscriptionUpdate({ id }) {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>
           <li className="font-medium">
-            <Link href="/xoomadmin/subscriptions" className="no-underline">
+            <Link href="/goaladmin/subscriptions" className="no-underline">
               Subscription
             </Link>
           </li>

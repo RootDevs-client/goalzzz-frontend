@@ -4,9 +4,9 @@ import { xoomBackendUrl } from '@/lib/axios/getAxios';
 import useGetPopularLeagues from '@/lib/hooks/admin/useGetPopularLeagues';
 import { DndContext, closestCenter } from '@dnd-kit/core';
 import {
-  SortableContext,
-  arrayMove,
-  verticalListSortingStrategy,
+    SortableContext,
+    arrayMove,
+    verticalListSortingStrategy,
 } from '@dnd-kit/sortable';
 
 import { useAuthStore } from '@/lib/auth-store';
@@ -175,7 +175,7 @@ function PopularLeagueList({ leaguesData }) {
       <div className="text-sm breadcrumbs p-5">
         <ul>
           <li>
-            <Link href="/xoomadmin/dashboard">
+            <Link href="/goaladmin/dashboard">
               <FaHome className="text-xl" />
             </Link>
           </li>

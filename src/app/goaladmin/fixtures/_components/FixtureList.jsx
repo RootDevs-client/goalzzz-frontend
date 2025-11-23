@@ -69,7 +69,7 @@ export default function FixtureList({ pickerDate, isFetching, setIsFetching }) {
               <div className="flex flex-col items-center justify-between border-l p-4 border-gray-200">
                 <Link
                   className="btn btn-sm w-full btn-outline rounded-md btn-success"
-                  href="/xoomadmin/general-settings"
+                  href="/goaladmin/general-settings"
                 >
                   {' '}
                   Set Now

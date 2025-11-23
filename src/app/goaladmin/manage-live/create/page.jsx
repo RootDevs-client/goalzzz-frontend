@@ -4,9 +4,9 @@ import CreateMatchForm from '../_components/CreateMatchForm';
 export default async function Page({ searchParams }) {
   const breadMenu = {
     path1: 'live matches',
-    link1: '/xoomadmin/manage-live',
+    link1: '/goaladmin/manage-live',
     path2: 'create',
-    link2: '/xoomadmin/manage-live/create',
+    link2: '/goaladmin/manage-live/create',
   };
 
   return (

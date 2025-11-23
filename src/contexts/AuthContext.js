@@ -13,8 +13,9 @@ export default function AuthContext({ children }) {
   const { token, isAdmin, user, updateUser, setLoading, isLoading } =
     useAuthStore();
 
+
   useEffect(() => {
-    if (token === undefined) return;
+    if (token === null) return;
     const validateUser = async () => {
       if (token && !isAdmin) {
         setLoading(true);
@@ -47,9 +48,8 @@ export default function AuthContext({ children }) {
   }, [token, updateUser, router]);
 
   useEffect(() => {
-    if (token === undefined) return;
+    if (token === null) return;
     const publicRoutes = [
-      '/login',
       '/phone-login',
       '/register',
       '/goaladmin/login',

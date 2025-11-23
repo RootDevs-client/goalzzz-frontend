@@ -139,7 +139,7 @@ export default function UpdateHighlight({ highlightId }) {
         }
       );
       if (data.status) {
-        push('/xoomadmin/highlights');
+        push('/goaladmin/highlights');
         toast.success('Highlight updated successfully');
         setIsUpdating(false);
       }

@@ -4,7 +4,7 @@ import CreateAppSettingsForm from './CreateAppSettingsForm';
 export default function AppSettingsHome() {
   const breadMenu = {
     path1: 'App Settings',
-    link1: '/xoomadmin/app-settings',
+    link1: '/goaladmin/app-settings',
   };
 
   return (
@@ -12,7 +12,7 @@ export default function AppSettingsHome() {
       <div className="">
         <BreadCrumb breadMenu={breadMenu} />
         {/* <Link
-          href="/xoomadmin/app-settings/create"
+          href="/goaladmin/app-settings/create"
           className="btn btn-success btn-sm rounded-md"
         >
           Create Settings
