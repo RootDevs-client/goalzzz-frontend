@@ -32,7 +32,7 @@ export default function Header() {
               href="/"
               className="flex items-center text-2xl font-semibold text-white uppercase md:text-3xl"
             >
-              <img src="logo.png" alt="App Logo" className="h-14" />
+              <img src="logo-white.png" alt="App Logo" className="h-14" />
             </Link>
             <ul className="flex items-center gap-3 text-lg text-white uppercase md:gap-5">
               <Link
