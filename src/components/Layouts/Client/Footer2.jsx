@@ -18,11 +18,7 @@ export default function Footer2() {
           <div className="mx-auto w-full max-w-screen-xl py-5 skew-y-[0.5deg]">
             <div className="flex flex-wrap justify-between ">
               <div className="p-0">
-                <img
-                  src="/images/logo.png"
-                  alt="logo"
-                  className="w-36 h-16 p-[7px]"
-                />
+                <img src="logo.png" alt="App Logo" className="h-14" />
                 <h2 className="my-2 font-bold ms-2">
                   Goalzzz is The best Football App
                 </h2>

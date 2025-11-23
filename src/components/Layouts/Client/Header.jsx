@@ -5,7 +5,6 @@ import { useAuthStore } from '@/lib/auth-store';
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
-import { BiFootball } from 'react-icons/bi';
 
 export default function Header() {
   const pathname = usePathname();
@@ -33,12 +32,7 @@ export default function Header() {
               href="/"
               className="flex items-center text-2xl font-semibold text-white uppercase md:text-3xl"
             >
-              <span className="text-secondary">x</span>
-              <BiFootball className="animate-bounce" />
-              <BiFootball className="text-secondary animate-bounce [animation-delay:-0.3s]" />
-              mSp
-              <BiFootball className="animate-spin" />
-              rts
+              <img src="logo.png" alt="App Logo" className="h-14" />
             </Link>
             <ul className="flex items-center gap-3 text-lg text-white uppercase md:gap-5">
               <Link
