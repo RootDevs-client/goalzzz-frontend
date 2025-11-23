@@ -11,9 +11,9 @@ export default function MainLayout({ children }) {
 
   const { isAdmin } = useAuthStore();
 
-  if (pathname.includes('xoomadmin/login')) {
+  if (pathname.includes('goaladmin/login')) {
     return <BlankLayout>{children}</BlankLayout>;
-  } else if (pathname.includes('xoomadmin') && isAdmin) {
+  } else if (pathname.includes('goaladmin') && isAdmin) {
     return <AdminLayout>{children}</AdminLayout>;
   } else {
     return <ClientLayout>{children}</ClientLayout>;

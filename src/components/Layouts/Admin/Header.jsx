@@ -24,7 +24,7 @@ export default function Header({ toggleSidebar, isSidebarOpen }) {
       useAuthStore.getState().logout();
     }
 
-    replace('/xoomadmin/login');
+    replace('/goaladmin/login');
   };
 
   const handleOutsideClick = (e) => {

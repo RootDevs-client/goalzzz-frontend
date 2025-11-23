@@ -5,7 +5,7 @@ const publicRoutes = [
   '/login',
   '/phone-login',
   '/register',
-  '/xoomadmin/login',
+  '/goal/admin/login',
   '/package',
   '/payment/success',
   '/payment/canceled',
@@ -19,7 +19,7 @@ export async function middleware(req) {
   const token = req.cookies.get('token');
 
   const isPublicRoute = publicRoutes.includes(pathname);
-  const isAdminRoute = pathname.startsWith('/xoomadmin');
+  const isAdminRoute = pathname.startsWith('/goal/admin');
 
   if (!token && !isPublicRoute) {
     return NextResponse.redirect(new URL('/login', req.url));
@@ -29,7 +29,7 @@ export async function middleware(req) {
     const payload = jwt.verify(token, secret);
 
     if (isAdminRoute && !payload.isAdmin) {
-      return NextResponse.redirect(new URL('/xoomadmin/login', req.url));
+      return NextResponse.redirect(new URL('/goal/admin/login', req.url));
     }
   } catch (error) {
     console.error('Token validation error:', error);

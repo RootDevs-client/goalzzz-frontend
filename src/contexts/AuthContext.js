@@ -52,22 +52,22 @@ export default function AuthContext({ children }) {
       '/login',
       '/phone-login',
       '/register',
-      '/xoomadmin/login',
+      '/goaladmin/login',
       '/package',
       '/payment/success',
       '/payment/canceled',
       '/error',
     ];
     const isPublicRoute = publicRoutes.includes(pathname);
-    const isAdminRoute = pathname.startsWith('/xoomadmin');
+    const isAdminRoute = pathname.startsWith('/goaladmin');
 
     if (!token && !isPublicRoute) {
       router.replace('/phone-login');
       return;
     }
 
-    if (isAdminRoute && !isAdmin && pathname !== '/xoomadmin/login') {
-      router.replace('/xoomadmin/login');
+    if (isAdminRoute && !isAdmin && pathname !== '/goaladmin/login') {
+      router.replace('/goaladmin/login');
       return;
     }
   }, [pathname, token, isAdmin, user, router]);
