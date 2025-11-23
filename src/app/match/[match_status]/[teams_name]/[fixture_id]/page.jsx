@@ -14,8 +14,6 @@ export default async function page({ params }) {
   try {
     const matchResponse = await getSingleMatch(fixture_id);
 
-    console.log("matchResponse", matchResponse)
-
     if (
       !matchResponse ||
       !matchResponse.status === 200 ||

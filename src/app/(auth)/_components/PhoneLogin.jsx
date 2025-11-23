@@ -3,7 +3,6 @@
 import { useAuthStore } from '@/lib/auth-store';
 import { xoomBackendUrl } from '@/lib/axios/getAxios';
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
@@ -155,13 +154,13 @@ export default function PhoneLogin({ phone = '', countries = [] }) {
     <div className="mt-10 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 rounded-lg border border-gray-300 shadow-lg overflow-hidden">
       <div className="flex flex-col items-center justify-center bg-primary text-white p-6 lg:p-10">
         <AppInfo />
-        <p className="text-gray-300 text-sm mt-3">Don’t have an account?</p>
+        {/* <p className="text-gray-300 text-sm mt-3">Don’t have an account?</p>
         <Link
           href={'/register'}
           className="mt-2 bg-white text-primary font-medium px-4 py-2 rounded-full shadow hover:bg-gray-100 transition"
         >
           Register
-        </Link>
+        </Link> */}
       </div>
       <div className="p-6 lg:p-10 bg-white">
         <h4 className="text-2xl font-semibold text-gray-800">Login</h4>

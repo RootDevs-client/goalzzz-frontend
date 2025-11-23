@@ -17,7 +17,7 @@ export default function Header() {
     if (user) {
       useAuthStore.getState().logout();
     }
-    replace('/login');
+    replace('/phone-login');
     toast.success('Signed out successfully!');
   };
 
@@ -130,7 +130,7 @@ export default function Header() {
                 </>
               ) : (
                 <Link
-                  href={'/login'}
+                  href={'/phone-login'}
                   className="text-white cursor-pointer hover:text-secondary"
                 >
                   login

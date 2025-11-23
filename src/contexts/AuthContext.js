@@ -62,7 +62,7 @@ export default function AuthContext({ children }) {
     const isAdminRoute = pathname.startsWith('/xoomadmin');
 
     if (!token && !isPublicRoute) {
-      router.replace('/login');
+      router.replace('/phone-login');
       return;
     }
 

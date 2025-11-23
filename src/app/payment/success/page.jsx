@@ -1,4 +1,4 @@
-import UserLogin from '@/app/(auth)/_components/UserLogin';
+// import UserLogin from '@/app/(auth)/_components/UserLogin';
 
 export default function page() {
   return (
@@ -9,7 +9,7 @@ export default function page() {
         </h4>
       </div>
 
-      <UserLogin />
+      {/* <UserLogin /> */}
     </div>
   );
 }
