@@ -1,0 +1,44 @@
+import jwt from 'jsonwebtoken';
+import { NextResponse } from 'next/server';
+
+const publicRoutes = [
+  '/login',
+  '/phone-login',
+  '/register',
+  '/xoomadmin/login',
+  '/package',
+  '/payment/success',
+  '/payment/canceled',
+  '/error',
+];
+
+const secret = process.env.JWT_SECRET;
+
+export async function middleware(req) {
+  const { pathname } = req.nextUrl;
+  const token = req.cookies.get('token');
+
+  const isPublicRoute = publicRoutes.includes(pathname);
+  const isAdminRoute = pathname.startsWith('/xoomadmin');
+
+  if (!token && !isPublicRoute) {
+    return NextResponse.redirect(new URL('/login', req.url));
+  }
+
+  try {
+    const payload = jwt.verify(token, secret);
+
+    if (isAdminRoute && !payload.isAdmin) {
+      return NextResponse.redirect(new URL('/xoomadmin/login', req.url));
+    }
+  } catch (error) {
+    console.error('Token validation error:', error);
+    return NextResponse.redirect(new URL('/login', req.url));
+  }
+
+  return NextResponse.next();
+}
+
+export const config = {
+  matcher: ['/:path*'],
+};

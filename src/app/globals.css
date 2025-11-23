@@ -1,0 +1,393 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: initial;
+  display: inline-block;
+  width: 50% !important;
+  padding: 0;
+  height: fit-content !important;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  right: -10px;
+  top: -50px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 0.75;
+  color: black;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 6px;
+  line-height: 20px;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  right: -72px;
+  width: 20px;
+  height: 20px;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: #25d366 !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-slider {
+  position: static !important;
+}
+
+.slick-dots li {
+  margin: 0 -3px !important;
+}
+.jwplayer.jw-skin-myskin .jw-display-icon-container {
+  border-style: solid;
+  border-width: medium;
+  border-radius: 50%;
+  padding: 1em;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(192, 189, 189);
+  /* border-radius: 100vw; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(61, 61, 61);
+  border: 0.1em solid white;
+  border-radius: 100vw;
+  background: #151515;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #3d3d3d;
+}
+
+/* Waving hand */
+
+@keyframes waving {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-15deg);
+  }
+}
+
+.waving-hand {
+  width: 40px;
+  height: 40px;
+  background: url('/images/waving-hand.png') no-repeat;
+  background-size: cover;
+  animation: waving 2s infinite;
+  margin-top: 20px;
+}
+
+.jw-error {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.jw-error iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.mobile_menu_bar {
+  /*  */
+}
+/* CSS for hiding the scrollbar */
+/* .scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  display: none !important;
+} */
+.scrollbar-hidden {
+  overflow-y: scroll; /* Add the ability to scroll */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.scrollbar-hidden {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+@media screen and (min-width: 640px) {
+  .mobile_menu_bar {
+    display: none;
+  }
+}
+
+.web_menu_bar {
+  /*  */
+}
+
+@media screen and (max-width: 640px) {
+  .web_menu_bar {
+    display: none;
+  }
+}
+
+/* media player css */
+/* Circle Media Player */
+.circle-media-player {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  line-height: 0;
+  background-color: transparent;
+  fill: none;
+  stroke: #d7dbdc;
+  stroke-width: 3;
+  cursor: pointer;
+  outline: 0;
+}
+
+.circle-media-player__foreground {
+  stroke: #6e9541;
+  transition: stroke-dashoffset 350ms;
+  transform: rotate(-90deg); /* position the start of the circle at the top */
+  transform-origin: 50% 50%;
+}
+
+.circle-media-player__background {
+  /* additional styles if needed */
+}
+
+.circle-media-player__play,
+.circle-media-player__pause {
+  fill: #6e9541;
+  stroke-width: 0;
+}
+.media-player-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 640px;
+  margin-bottom: 24px;
+}
+
+.media-player {
+  width: 100%;
+  max-width: 640px;
+  position: relative;
+}
+
+.media-player-element {
+  max-width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  overflow: hidden;
+  background-color: #d4d4d4;
+}
+
+.media-player-element video,
+.media-player-element iframe,
+.media-player-element object,
+.media-player-element embed {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+
+.media-player video::-webkit-media-controls {
+  display: none !important; /* hide native controls */
+}
+.media-controls {
+  display: flex;
+  align-items: center;
+  padding: 12px;
+  background-color: #282f31;
+  color: #fff;
+}
+
+.media-controls svg,
+.media-controls path,
+.media-controls polygon {
+  transform-origin: 50% 50%;
+}
+
+.media-player--fullscreen .media-controls {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2147483647; /* bring controls to the front */
+}
+.media-controls--full {
+  flex-direction: column;
+}
+
+.media-control-group--seek {
+  width: 100%;
+  margin: 12px 0;
+}
+
+.media-control--progress {
+  width: calc(100% - 24px);
+  height: 3px;
+  margin: 0 12px;
+  position: absolute;
+  top: 7px;
+  left: 12px;
+  background-color: #373d3f;
+}
+
+.media-control--progress::-webkit-progress-bar,
+.media-control--progress::-webkit-progress-value {
+  background-color: lighten(#373d3f, 5%);
+}
+
+.media-control--progress::-moz-progress-bar {
+  background-color: lighten(#373d3f, 5%);
+}
+
+.media-control--seekbar {
+  position: relative;
+  z-index: 5;
+}
+
+.media-control--volume {
+  max-width: 120px;
+}
+.media-control--prev-track {
+  margin-right: 6px;
+}
+
+.media-control--next-track {
+  margin-left: 6px;
+}
+input[type='range'] {
+  width: 100%;
+  height: 12px;
+  padding: 0 12px;
+  margin: 0;
+  background-color: transparent;
+}
+
+input[type='range']:hover,
+input[type='range']:active {
+  transform: scale(1.25); /* for thumb interaction */
+}
+
+input[type='range']::-webkit-slider-container {
+  background-size: inherit;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  width: 8px;
+  height: 8px;
+  background-color: #cdd7db;
+  border-radius: 50%;
+  cursor: grab;
+  transform-origin: 50% 50%;
+  transition: transform 150ms ease-out;
+}
+
+input[type='range']::-webkit-slider-thumb:active {
+  cursor: grabbing;
+}
+.media-playlist-header {
+  padding: 2px;
+  background-color: #373d3f;
+}
+
+.media-playlist-title {
+  font-size: 14px;
+  text-align: center;
+}
+
+.media-playlist {
+  background-color: #282f31;
+  color: #fff;
+}
+
+.media-playlist-tracks {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 1px solid #373d3f;
+}
+
+.media-playlist-track {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.media-playlist-track + .media-playlist-track {
+  border-top: 1px solid #373d3f;
+}
+
+.media-playlist-track.is-active {
+  color: #8bb955;
+}
+
+/* react player css*/
+/* youtube tag remove */
+
+.ytp-chrome-controls .ytp-button.ytp-youtube-button,
+.ytp-small-mode .ytp-chrome-controls .ytp-button.ytp-youtube-button,
+.ytp-embed .ytp-chrome-controls .ytp-button.ytp-youtube-button,
+.ytp-embed.ytp-small-mode .ytp-chrome-controls .ytp-button.ytp-youtube-button,
+.ytp-dni.ytp-embed .ytp-chrome-controls .ytp-button.ytp-youtube-button {
+  width: 0px !important;
+}
+/* youtube tag remove */
+/* react player css*/
+
+.yt-embed-holder {
+  width: 100%;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  pointer-events: none;
+}
+
+/* .yt-embed-holder iframe {
+  width: 100%;
+  height: 100%;
+} */
